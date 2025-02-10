@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panaviews</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="parallax">
+        <div id="menu-bar">
+          <h1>PANAVIEWS</h1>
+          <div class="menu-icon" onclick="toggleMenu()">☰Menú</div>
+        </div>
+
+        <section class="content">
+            <h2>EXPLORA EL PUENTE DEL MUNDO, CORAZÓN DEL UNIVERSO</h2>
+            <p>¡Bienvenido a su portal de aventuras panameñas! Descubra la magia de Panamá con nosotros, 
+                desde las vibrantes calles de la capital hasta las cristalinas playas del Caribe y el Pacífico. 
+                Sumérjase en la rica cultura de PANAMÁ.
+            </p>
+            <a href="sitios.html">Ver Sitios</a>
+          </section>
+      </header>
+    
+      <nav id="mobile-menu" class="mobile-menu">
+        <ul>
+          <li><a href="index.html" class="resaltar">Inicio</a></li>
+          <li><a href="sitios.html">Sitios</a></li>
+          <li><a href="#conocenos">Conocenos</a></li>
+          <li><a href="#historia">Historia panameña</a></li>
+        </ul>
+      </nav>
+      
+      <main>
+        <section class="info1">
+            <div>
+                <h2>Explora Nuestros Destinos Icónicos</h2>
+                <p>Descubra un país donde los mundos colisionan en perfecta armonía. Panamá, tierra de contrastes, 
+                    donde el Pacífico besa al Caribe y la modernidad se entrelaza con la historia.</p>
+                <p>Maravíllate con el ingenio humano en el Canal de Panamá. Piérdete en las calles coloniales del Casco Viejo. 
+                    Sumérgete en la biodiversidad de sus parques nacionales. Relájate en las paradisiacas playas de Bocas del Toro o San Blas. 
+                    <strong>¡Aventura, historia y naturaleza te esperan!</strong>
+                </p>
+            </div>
+            <div>
+                <img src="img/casco.jpg" alt="img-casco">
+            </div>
+            
+        </section>
+
+        <section class="infoProvincias">
+            <h2>Las Provincias</h2>
+            <p>
+                Las provincias de Panamá ofrecen una diversidad de paisajes, culturas y experiencias que te permitirán explorar desde ciudades 
+                vibrantes hasta selvas tropicales y playas paradisíacas, siendo el destino ideal para quienes buscan una mezcla de cultura, aventura y naturaleza. </p>
+            <h3 id="nombre_provincia"></h3>
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <img src="img/bocas_del_toro.webp" alt="Imagen 1">
+                    <img src="img/chiriqui.jpg" alt="Imagen 1">
+                    <img src="img/veraguas.jpg" alt="">
+                    <img src="img/herrera.jpg" alt="Imagen 1">
+                    <img src="img/los_santos.webp" alt="Imagen 1">
+                    <img src="img/cocle.webp" alt="Imagen 1">
+                    <img src="img/panama_oeste.jpg" alt="Imagen 1">
+                    <img src="img/panama.webp" alt="Imagen 1">
+                    <img src="img/colon.jpg" alt="Imagen 1">
+                    <img src="img/Darien.jpg" alt="Imagen 1">
+                </div>
+                <div class="carousel-controls">
+                    <button onclick="previousSlide()">❮</button>
+                    <button onclick="nextSlide()">❯</button>
+                </div>
+            </div>
+            
+        </section>
+        
+
+        <section class="infoSeparador">
+            <h2>Aventuras para todos los gustos</h2>
+            <ul>
+                <li><img src="img/ecoturismo.png" alt="Ecoturismo">Ecoturismo</li>
+                <li><img src="img/buceo.png" alt="Buceo">Buceo</li>
+                <li><img src="img/surf.png" alt="Surf">Surf</li>
+                <li><img src="img/museo.png" alt="Museos">Museos</li>
+                <li><img src="img/playa.png" alt="Playas Caribeñas">Playas caribeñas</li>
+                <li><img src="img/platos.png" alt="Platos Nacionales">Platos Nacionales</li>
+            </ul>
+        </section>
+
+        <section class="infoLugares">
+            <h2>Lugares Destacados</h2>
+            <div>
+                <div id="op1" class="opiniones">
+                    <p class="overlay-text">Museo Catolico</p>
+                </div>
+                <div id="op2" class="opiniones">
+                    <p class="overlay-text">Museo de las Molas</p>
+                </div>
+                <div id="op3" class="opiniones">
+                    <p class="overlay-text">Plaza de Francia</p>
+                </div>
+                <div id="op4" class="opiniones">
+                    <p class="overlay-text">Summit</p>
+                </div>
+            </div>
+        </section>
+      </main>
+
+      <footer>
+        <img src="img/logo_tribu.png" alt="logo-tribu">
+        <span>TRIBU Saucy PACK</span>
+        <div>
+            <ul>
+                <li>Contacto</li>
+                <li>Politica de Privacidad</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="redes">
+            <h2>Conoce Más En!</h2>
+            <img src="img/insta.png" alt="instagram">
+            <img src="img/x.png" alt="X">
+        </div>
+      </footer>
+    
+      
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

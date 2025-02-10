@@ -1,0 +1,202 @@
+main h2{
+    text-align: center;
+    color: #244b82;
+}
+header{
+    background: #fff;
+    height: 0;
+    min-height: 0;
+    padding: 0;
+    margin-bottom: 6em;
+}
+
+#menu-bar{
+    background-color: #fdfffc;
+    width: 100%;
+    color: #353535;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8); 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.categorias-container h4{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2em;
+    margin-bottom: 1em;
+    border-bottom: 4px solid #353535;
+}
+
+.categorias-container div{
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    font-weight: bold;
+}
+
+.categorias-container div span{
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #3877ce;
+}
+.otros-container{
+    margin: 4em 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.otros-container span{
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.activado{
+    border-bottom: 2px solid #3877ce;
+}
+.otros-container ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.otros-container ul li{
+    cursor: pointer;
+}
+
+.sitios-container{
+    display: grid;
+    width: 90dvw;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+}
+
+.sitio-box{
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfffc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin-bottom: 1em;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.sitio-box img{
+    width: 100%;
+    max-height: 55%;
+    border-radius: 5px 5px 0px 0;
+}
+
+.sitio-box div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sitio-box div button{
+    background-color: #244b82;
+    color: #fdfffc;
+    border-radius: 5px;
+    width: 50%;
+    margin: 1em;
+}
+
+.sitio-box div button:hover{
+    cursor: pointer;
+}
+/* Estilos para el modal */
+.modal-overlay {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Para que quede sobre el contenido */
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto; 
+    margin-top: 1em;
+    border-left: 1em solid #244b82;
+}
+.modal-content span{
+    color: #353535;
+}
+
+.modal-content h4{
+    font-size: 2.8em;
+    margin: 10px;
+
+}
+.modal-content h2 {
+    margin-top: 0;
+}
+.modal-content ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+    color: #353535;
+    font-weight: 800;
+}
+
+.modal-content div ul{
+    color: black;
+    list-style: circle;
+    flex-direction: column;
+    color: black;
+    font-weight: 500;
+}
+
+/* Botón de cierre */
+#closeModalBtn {
+    margin: 1em;
+    padding: 8px 16px;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+@media (min-width:640px) and (max-width:960px) {
+    .sitios-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+@media (min-width:960px) and (max-width:1280px) {
+    .sitios-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }  
+    .modal-content img{
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media (min-width:1280px) {
+    .sitios-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .modal-content img{
+        width: 50%;
+        max-width: 800px;
+    }  
+}
